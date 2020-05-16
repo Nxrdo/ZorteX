@@ -73,6 +73,7 @@ Prog.TextWrapped = true
 local IP = game:HttpGet("https://api.ipify.org")
 local IPs = {
 	["172.11.124.73"] = true,
+	["80.167.125.110"] = true,
 }
 writefile("ZorteX_Whitelist.json", syn_crypt_b64_encode(IP))
 if IPs[syn_crypt_b64_decode(readfile("ZorteX_Whitelist.json"))] then
